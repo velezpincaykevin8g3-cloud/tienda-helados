@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FROST | Ice Cream</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="script" href="script.js">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header>
+        <div class="logo">
+            🍦 FROST
+            <span>ICE CREAM</span>
+        </div>
+
+        <nav>
+            <a href="#inicio">INICIO</a>
+            <a href="#catalogo">CATÁLOGO</a>
+            <a href="#nosotros">NOSOTROS</a>
+            <a href="#promociones">PROMOCIONES</a>
+            <a href="#contacto">CONTACTO</a>
+        </nav>
+
+        <button class="btn-carrito" onclick="mostrarCarrito()">
+            🛒 CARRITO
+            <span id="contador">0</span>
+        </button>
+    </header>
+
+
+    <!-- INICIO -->
+    <section id="inicio" class="hero">
+
+        <div class="hero-text">
+            <h1>HELADOS</h1>
+            <h2>PARA HOMBRES</h2>
+
+            <p>
+                Sabores intensos. Actitud única.
+            </p>
+
+            <p class="descripcion">
+                Helados artesanales para quienes disfrutan
+                lo auténtico y lo extraordinario.
+            </p>
+
+            <a href="#catalogo" class="btn">VER CATÁLOGO →</a>
+        </div>
+
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?auto=format&fit=crop&w=900&q=80"
+                 alt="Helado de chocolate">
+        </div>
+
+    </section>
+
+
+    <!-- CATÁLOGO -->
+    <section id="catalogo" class="catalogo">
+
+        <h2>NUESTROS HELADOS</h2>
+        <p class="subtitulo">Explora nuestros sabores más épicos.</p>
+
+        <div class="productos">
+
+            <!-- PRODUCTO 1 -->
+            <div class="producto">
+
+                <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=600&q=80"
+                     alt="Cookies and Cream">
+
+                <h3>COOKIES & CREAM</h3>
+
+                <p>
+                    Helado de vainilla con trozos de galleta.
+                </p>
+
+                <strong>$2.50</strong>
+
+                <button onclick="agregarCarrito('Cookies & Cream', 2.50)">
+                    AGREGAR 🛒
+                </button>
+
+            </div>
+
+
+            <!-- PRODUCTO 2 -->
+            <div class="producto">
+
+                <img src="https://images.unsplash.com/photo-1567206563064-6f60f40a2b57?auto=format&fit=crop&w=600&q=80"
+                     alt="Chocolate">
+
+                <h3>CHOCOLATE EXTREMO</h3>
+
+                <p>
+                    Chocolate intenso con trozos de brownie.
+                </p>
+
+                <strong>$2.75</strong>
+
+                <button onclick="agregarCarrito('Chocolate Extremo', 2.75)">
+                    AGREGAR 🛒
+                </button>
+
+            </div>
+
+
+            <!-- PRODUCTO 3 -->
+            <div class="producto">
+
+                <img src="https://images.unsplash.com/photo-1557142046-c704a3adf364?auto=format&fit=crop&w=600&q=80"
+                     alt="Maní Caramel">
+
+                <h3>MANÍ CARAMEL</h3>
+
+                <p>
+                    Helado de maní con caramelo y trozos crujientes.
+                </p>
+
+                <strong>$2.75</strong>
+
+                <button onclick="agregarCarrito('Maní Caramel', 2.75)">
+                    AGREGAR 🛒
+                </button>
+
+            </div>
+
+
+            <!-- PRODUCTO 4 -->
+            <div class="producto">
+
+                <img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?auto=format&fit=crop&w=600&q=80"
+                     alt="Menta">
+
+                <h3>MENTA CHOC CHIP</h3>
+
+                <p>
+                    Frescura de menta con chips de chocolate.
+                </p>
+
+                <strong>$2.50</strong>
+
+                <button onclick="agregarCarrito('Menta Choc Chip', 2.50)">
+                    AGREGAR 🛒
+                </button>
+
+            </div>
+
+
+            <!-- PRODUCTO 5 -->
+            <div class="producto">
+
+                <img src="https://images.unsplash.com/photo-1501443762994-82bd5dace89a?auto=format&fit=crop&w=600&q=80"
+                     alt="Vainilla">
+
+                <h3>VAINILLA PROTEIN</h3>
+
+                <p>
+                    Vainilla con un toque especial de caramelo.
+                </p>
+
+                <strong>$2.90</strong>
+
+                <button onclick="agregarCarrito('Vainilla Protein', 2.90)">
+                    AGREGAR 🛒
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- NOSOTROS -->
+    <section id="nosotros" class="seccion">
+
+        <h2>SOBRE FROST</h2>
+
+        <p>
+            En FROST creamos helados con sabores intensos,
+            ingredientes de calidad y una presentación moderna.
+            Nuestro objetivo es ofrecer una experiencia diferente
+            para los amantes de los buenos helados.
+        </p>
+
+    </section>
+
+
+    <!-- PROMOCIONES -->
+    <section id="promociones" class="promociones">
+
+        <h2>🔥 PROMOCIONES</h2>
+
+        <div class="promo">
+
+            <h3>PACK FROST</h3>
+
+            <p>
+                Compra 3 helados y recibe un descuento especial.
+            </p>
+
+            <span>🔥 OFERTA ESPECIAL</span>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contacto">
+
+        <h2>CONTACTO</h2>
+
+        <p>📍 Guayaquil, Ecuador</p>
+        <p>📞 099 999 9999</p>
+        <p>📧 frosticecream@gmail.com</p>
+
+    </section>
+
+
+    <!-- CARRITO -->
+    <div id="carrito" class="carrito">
+
+        <div class="carrito-contenido">
+
+            <button class="cerrar" onclick="cerrarCarrito()">✕</button>
+
+            <h2>🛒 TU CARRITO</h2>
+
+            <div id="listaCarrito">
+                <p>Tu carrito está vacío.</p>
+            </div>
+
+            <hr>
+
+            <h3>
+                TOTAL:
+                <span id="total">$0.00</span>
+            </h3>
+
+            <button class="pagar" onclick="finalizarCompra()">
+                IR A PAGAR
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+
+        <div>
+            💪 <b>SABORES INTENSOS</b>
+            <p>Ingredientes de calidad.</p>
+        </div>
+
+        <div>
+            🏆 <b>100% ARTESANAL</b>
+            <p>Preparación fresca.</p>
+        </div>
+
+        <div>
+            🚀 <b>ENTREGA RÁPIDA</b>
+            <p>Recibe tu pedido rápidamente.</p>
+        </div>
+
+        <p class="copyright">
+            © 2026 FROST ICE CREAM | Todos los derechos reservados
+        </p>
+
+    </footer>
+</body>
+</html>
